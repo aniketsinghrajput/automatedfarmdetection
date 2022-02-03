@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Automated Farm Detection</title>
+    <link rel="stylesheet" type="text/css" href="../static/index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../static/index.js"></script>
+	<style>
+		#map-canvas {
+			width: auto;
+			height: 350px;
+		}
+		#info {
+			position: absolute;
+			font-family: arial, sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	</style>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcJrE5h2_oJLvcIA8Ph0sfNbYNn1No8Rc&callback=initMap">
+</script>
+  </head>
+  <body>
+	
+    <div class="App">
+      <header class="App-header">
+        <p> Automated Farm Detection</p>
+		<h2>by iAvenue Labs</h2>
+		
+        <!-- <div className="pre_img">
+          <span><img id="imagebox" src="" /></span>
+        </div> -->
+        <div id="link">
+          <a href="" id="download" download>Download</a>
+        </div>
+        <!-- <video width="320" height="240" controls>
+          <source src="/static/video_1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video> -->
+        <form>
+          <input
+            id="imageinput"
+            type="file"
+            name="image"
+            onchange="readUrl(this)"
+          />
+        </form>
+        <button name="send" id="sendbutton">Send</button>
+      </header>
+    </div>
+  </body>
+</html>
